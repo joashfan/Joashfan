@@ -1,0 +1,372 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+
+.b-container{
+  width: 100%;
+}
+header{
+  width: 100%;
+/*   max-width: 1920px; */
+  height: 90px;
+}
+.flex-ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+li{
+  font-size: 28px;
+  line-height: 1.5;
+  font-weight: bold;
+  margin-right: 40px;
+}
+.container1{
+  width: 100%;
+  max-width: 1920px;
+  display: flex;
+  height: 834px;
+}
+.imgbox2{
+  position: relative;
+}
+.imgbox1, .imgbox2{
+  flex: 1;
+  overflow: hidden;
+  
+}
+.imgbox1 img,.imgbox2 img {
+  max-width: 960px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  display: block; 
+}
+.text{
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/16da9aa899a5190ed2d5bdfe48ae1cc631b95463/2025-web-camp/desktop/index/Hero%20Section2.png");
+  flex: 1; /* 從父級 .container1 繼承 */
+  overflow: hidden; /* 保持 */
+  height: 834px;
+  background-size: cover;
+  padding: 80px;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+}
+.text h4{
+  font-family: Noto Sans TC;
+  font-size: 120px;
+  font-weight: bold;
+  line-height: 1.5;
+  color: blue;
+}
+.text p{
+  font-family: Noto Sans TC;
+  font-size: 28px;
+  font-weight: bold;
+  color: blue;
+  line-height: 1.5;
+}
+.imgbox3{
+  max-width: 948px;
+  width: 100%;
+}
+.imgbox3 img {
+  max-width: 100%; 
+  height: 640px;
+}
+.container2{
+  width: 100%;
+  height: 640px;
+  display: flex;  
+}
+.content{
+  max-width: 948px;
+  height: 413px;
+  width: 100%;
+  margin-left: 24px;
+}
+.inside-content{
+  max-width: 636px;
+  height: 640px;
+  width: 100%;
+  padding-top: 207px;
+  padding-left: 0px;
+  box-sizing: border-box;
+}
+h3{
+  font-family: Noto Sans TC;
+  font-size: 16px;
+  line-height: 1.5;
+}
+h2{
+  font-family: Noto Sans TC;
+  font-size: 24px;
+  color: blue;  
+  line-height: 1.5;
+}
+span{
+  border-radius: 40px;
+  width: 88px; 
+  height: 36px;
+  background-color: #0027D5;
+  color: white;
+  font-family: Noto Sans TC;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.5;
+  padding: 0 12px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+h1{
+  line-height: 1.5;
+  margin-bottom: 16px;
+  font-family: Noto Sans TC;  
+  font-size: 28px;
+  font-weight: bold;
+}
+p{
+  font-size: 16px;
+  font-family: Noto Sans TC; 
+  line-height: 1.5;
+  color: #4B4B4B;
+  margin-top: -16px;
+  margin-bottom: 16px;
+  width: 100%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+a{
+  display: block;
+  box-sizing: border-box;
+  width: 96px;
+  height: 40px;
+  margin-bottom: 0;
+  padding-top: 8px;
+  line-height: 1.5;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 40px;
+  color: #4B4B4B;
+}
+.container3{
+  margin: 0 auto;
+  max-width: 1296px;
+}
+.searchdiv{
+  max-width: 416px;
+  margin-top: 80px;
+  position: relative;
+}
+.search{
+  width: 416px;
+  height: 56px;
+  line-height: 1.5;
+  font-size: 16px;
+  box-sizing: border-box;
+  padding-left: 49px;
+  border: 1px solid #4b4b4b;
+  border-radius: 40px;
+}
+.bi-search{
+  font-size: 24px;
+  position: absolute;
+  left: 20px;
+  bottom: 15px;
+}
+.cardcontainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1296px;
+  margin: 0 auto;
+}
+.card{
+  width: 416px;
+  height: 476px;
+  margin: 40px 0;  
+}
+.pagenum{
+  display: flex;
+  justify-content: center;
+}
+.pagenum-box{
+  width: 328px;
+  display: flex;
+  justify-content: center;  
+}
+.pagenum a{
+  font-size: 16px;
+  font-family: Noto Sans TC;
+  border: 0;
+}
+.container4{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1296px;
+  margin: 0 auto;
+  height: 208px;
+}
+.email{
+  font-size: 32px;
+  max-width: 1036px;
+  color: #000000;
+  font-family: Noto Sans TC;
+}
+.icon{
+  display: block;
+  justify-content: space-around;
+  max-width: 236px;
+  font-size: 24px;
+}
+footer{
+  font-family: Noto Sans TC;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 24px 0;
+  text-align: center;
+}
+
+
+@media (max-width:375px){
+  .container1, .container2{
+    display: flex;
+    flex-direction: column;
+  }
+  .imgbox2{
+    height: 180px;
+  }
+  .container2, .container1{
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+  .text{
+    height: 180px;
+    display: flex;
+    padding: 12px;
+  }
+  .text h4{
+    font-size: 52px;
+  }
+  .text p{
+    font-size: 28px;
+  }
+  .imgbox3{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+  .imgbox3 img{
+    max-width: 100%;
+    height: auto;
+    display: block; 
+  }
+  .content{
+    max-width: 351px;
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    padding-left: 12px;
+  }
+  .inside-content{
+    width: 100%;
+    height: auto;
+    padding-top: 48px; /* 大幅減小手機版的 padding-top，或設為0 */
+    padding-left: 0px;
+  }
+  .container3{
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  
+  .searchdiv{
+    margin-top: 64px;
+    width: 100%;
+    max-width: 100%;
+  }
+  .search{
+    width: 100%;
+  }
+  
+  .cardcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .card{
+    width: 100%;
+    max-width: 351px;
+    height: auto;
+  }
+  .card img{
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .container4{
+    display: none;
+    height: 0;
+  }
+  
+}
