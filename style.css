@@ -359,7 +359,7 @@ ul.pagination li a:hover {
 
 
 /*響應式設計*/
-@media(max-width:768px) {
+@media(max-width:767px) {
 
 
 .index {
